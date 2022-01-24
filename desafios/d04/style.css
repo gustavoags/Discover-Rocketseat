@@ -1,0 +1,100 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&family=Work+Sans:wght@700&display=swap');
+
+* {
+    margin: 0 auto;
+}
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+#logo{
+    position: absolute;
+    width: 389px;
+    height: 94px;
+    left: 30px;
+    top: 50px;
+}
+
+.title {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 28px;
+    
+    color: var(--title-color);
+
+    position: absolute;
+    width: 566px;
+    height: 30px;
+    left: 35px;
+    top: 235px;
+}
+
+.sub-title {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+
+    color:white;
+
+    position: absolute;
+    width: 550px;
+    height: 16px;
+    left: 35px;
+    top: 275px;
+}
+
+.contents{
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: var(--text-color);
+
+    position: absolute;
+    width: 680px;
+    height: 18px;
+    left: 35px;
+    top: 305px;
+}
+
+.e-form{
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: var(--form-color);
+
+    position: absolute;
+    width: 140px;
+    height: 18px;
+    left: 35px;
+    top: 400px;
+}
+
+.box-email{
+    position: absolute;
+    width: 800px;
+    height: 48px;
+    left: 35px;
+    top: 428px;
+
+    filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5))
+}
