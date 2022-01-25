@@ -14,8 +14,13 @@
     --bg-button-color: #8257e5;
 }
 
-body {
-    background-color: var(--body-bg-color);
+body {background-color: black;
+    background-size: 50% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image:url(assets/read_news.jpg);
+    background-attachment: fixed;
+    
 }
 
 #logo{
@@ -35,6 +40,7 @@ body {
     color: var(--title-color);
 
     position: absolute;
+    width: 398px ;
     width: 566px;
     height: 30px;
     left: 35px;
@@ -57,7 +63,7 @@ body {
     top: 275px;
 }
 
-.contents{
+.contents {
     font-family: 'Spartan';
     font-style: normal;
     font-weight: normal;
@@ -73,7 +79,7 @@ body {
     top: 305px;
 }
 
-.e-form{
+.e-form {
     font-family: 'Spartan';
     font-style: normal;
     font-weight: normal;
@@ -89,12 +95,65 @@ body {
     top: 400px;
 }
 
-.box-email{
+.box-email {
     position: absolute;
-    width: 800px;
-    height: 48px;
-    left: 35px;
+    width: 750px;
+    height: 42px;
+    left: 39px;
     top: 428px;
+}
 
-    filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5))
+.botao {
+    background-image: url(./assets/send.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--bg-button-color);
+    text-decoration: none;
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 797px;
+    top: 428px
+}
+
+button:hover {
+    background-color: rgba(128, 0, 128, 0.692);
+    color: rebeccapurple;
+
+}
+
+.green {
+    position: absolute;
+    width: 5px;
+    height: 48px;
+    left: 36px;
+    top: 428px;
+    color: #04D361;
+    background: #04D361;
+}
+
+.rodape {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+
+    color: var(--bg-button-color);
+
+    position: absolute;
+    width: 250px;
+    height: 19px;
+    left: 35px;
+    top: 520px
+}
+
+a {
+    text-decoration: none;
+}
+
+footer a::after{
+    content: ' 🔗';
 }
