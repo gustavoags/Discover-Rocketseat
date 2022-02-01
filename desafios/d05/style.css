@@ -1,0 +1,187 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+* {
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    
+}
+
+main {
+    background-color:var(--background);
+    height: 100vh;
+    flex-basis: 50%;
+    padding: 25px;
+
+    font-family: 'Poppins';
+    color: var(--text-title);
+}
+
+
+
+form {
+    padding-top: 30px;
+    background-color: var(--form-background);
+    border-radius: 4px;
+    margin: 40px;
+    display: flex;
+    flex-flow: wrap column;
+    column-gap: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    font-family: 'Poppins';
+    padding: 20px;
+}
+
+h1 {
+    margin-left: 0;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.log {
+    margin-right: 5px;
+    margin-left: 85px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+
+    /*padding-top: 12px;*/
+    padding-bottom: 10px;
+}
+
+#email {
+    width: 335px;
+    height: 35px;
+
+    text-align: center;
+    color: var(--primary-color);
+
+    border: 1px solid var(--text-base);
+    border-radius: 4px;
+    background-color: var(--form-background);
+    background-image: url(images/mail.svg);
+    background-repeat: no-repeat;
+    background-position: left ;
+    background-origin: content-box;
+}
+
+/*#email:hover {
+    border: 1px solid var(--primary-color);
+}*/
+
+#email:focus {
+    outline: none;
+    border: 2px solid var(--primary-color);
+}
+
+#senha {
+    width: 335px;
+    height: 35px;
+
+    text-align: center;
+
+    border: 1px solid var(--text-base);
+    border-radius: 4px;
+    background-color: var(--form-background);
+    background-image: url(images/lock.svg), url(images/eye.svg);
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-origin: content-box;
+    
+}
+
+#senha:focus{
+    outline: none;
+    border: 2px solid var(--primary-color);
+}
+
+#remember {
+    box-sizing: border-box;
+    border-radius: 15px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+
+p > a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+button {
+    width: 335px;
+    height: 50px;
+
+    margin-bottom: 15px;
+
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    border-color: var(--primary-color);
+    text-align: center;
+    font: bold 18px Poppins;
+}
+
+.register {
+    color: var(--primary-color);
+    font-weight: normal;
+    font-style: normal;
+
+    margin-bottom: 30px;
+}
+
+.finish {
+    display: flex;
+    align-items: baseline;
+}
+
+strong {
+    font-weight: bolder;
+    font-style: normal;
+}
+
+aside {
+    background-image:url(images/side-image.jpg);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: right ;
+    
+    flex-basis: 50%;
+}
