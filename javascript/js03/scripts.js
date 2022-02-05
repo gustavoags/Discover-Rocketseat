@@ -41,7 +41,7 @@ const john = {
     isSubscribed: true
 }
 students = [
-    student,
-    john
+    student, /*[0]*/
+    john     /*[1]*/
 ]
 console.log(students[1])
