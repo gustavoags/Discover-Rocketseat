@@ -1,94 +1,37 @@
-// function expression
-// function anonymous
+// Manipulando Strings e Números
 
-//parâmetros (parameters)
-/*const sum = function(number1, number2) {
-    total = number1 + number2
-    return total
-}
+// String em número e número em string
+/*let string = "123"
+console.log(Number(string))
+let number = 321
+console.log(String(number))*/
 
-//sum(2, 3) // arguments - argumentos
+// Contar quantos caracteres tem uma palavra e quantos digitos tem um número
+/*let word = "Paralelepípedo"
+console.log(word.length)
+let number = 1234
+console.log(String(number).length)*/
 
-let number1 = 34
-let number2 = 25
-sum(number1, number2)
+// Transformar um número quebrado com 2 casas decimais e trocar ponto por vírgula
+/*let number = 435.21548558
+console.log(number.toFixed(2).replace(".", ","))*/
 
-console.log(`o número 1 é ${number1}`)
-console.log(`o número 2 é ${number2}`)
-console.log(`a soma é ${sum(number1, number2)}`)*/
+// Transforme letras minúsculas em maiúsculas. Faça o contrário disso também
+/*let word = "Programar é muito bacana!"
+console.log(word.toLowerCase().toUpperCase())*/
 
-// Função é um liquidificador
+//Separe um texto que contem espaços, em um novo array onde cada texto é uma posição do array. Depois disso, transforme o array em um texto e onde eram espaços, coloque _
+/*let phrase = "Eu quero muito aprender programação."
+let myArray = phrase.split(" ")
+let phraseWithUnderscore = myArray.join("_")
+console.log(phraseWithUnderscore.toLowerCase())*/
 
-/*function fazerSuco(fruta1, fruta2) {
-    return 'suco de: ' + fruta1 + fruta2
-}
+// Verificar se o texto contém a plavra Amor
+/*let phrase = "Eu quero viver o amor!"
+console.log(phrase.includes("amor"))*/
 
-const copo = fazerSuco('banana', 'maçã')
+// Manipulando Arrays
 
-console.log(copo)*/
-
-// function scope
-
-/*let subject = 'create video'
-
-function createThink(subject) {
-    subject = 'study'
-    return subject
-}
-
-console.log(createThink(subject))
-console.log(subject)*/
-
-// function hoisting
-
-/*sayMyName();
-
-function sayMyName() {
-    console.log('Gustavo')
-}*/
-
-// arrow function
-
-/*const sayMyName = (name) => {
-    console.log('Gustavo')
-}
-
-sayMyName('Gustavo')*/
-
-// callback function
-
-/*function sayMyName(name) {
-    console.log('antes de executar a função callback')
-
-    name()
-
-    console.log('depois de executar a callback')
-}
-
-sayMyName(
-    () => {
-        console.log('estou em uma callback')
-    }
-)*/
-
-/* Function() constructor
-
-    * expressão new
-    * criar um novo objeto
-    * this keyword
-
-
-function Person(name) {
-    this.name = name
-    this.walk = function() {
-        return this.name + " está andando"
-    }
-}
-const gustavo =  new Person("Gustavo")
-const mayk = new Person("Mayk")
-console.log(gustavo.walk())
-console.log(mayk.walk())
-*/
-
-
-    
+// Criar Array com construtor
+let myArray = new Array('a', 'b', 'c')
+console.log(myArray)
