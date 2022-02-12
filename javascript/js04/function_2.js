@@ -17,6 +17,8 @@ console.log(`o número 1 é ${number1}`)
 console.log(`o número 2 é ${number2}`)
 console.log(`a soma é ${sum(number1, number2)}`)*/
 
+//-------------------------------------------------
+
 // Função é um liquidificador
 
 /*function fazerSuco(fruta1, fruta2) {
@@ -26,6 +28,8 @@ console.log(`a soma é ${sum(number1, number2)}`)*/
 const copo = fazerSuco('banana', 'maçã')
 
 console.log(copo)*/
+
+//--------------------------------------------------------
 
 // function scope
 
@@ -38,6 +42,8 @@ function createThink(subject) {
 
 console.log(createThink(subject))
 console.log(subject)*/
+
+//------------------------------------------------------
 
 // function hoisting
 
@@ -55,6 +61,8 @@ function sayMyName() {
 
 sayMyName('Gustavo')*/
 
+//----------------------------------------------------
+
 // callback function
 
 /*function sayMyName(name) {
@@ -70,6 +78,8 @@ sayMyName(
         console.log('estou em uma callback')
     }
 )*/
+
+//--------------------------------------------------
 
 /* Function() constructor
 
